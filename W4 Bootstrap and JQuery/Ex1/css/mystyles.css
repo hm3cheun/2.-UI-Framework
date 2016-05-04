@@ -4,6 +4,12 @@ body{
     z-index:0;
 }
 
+#carouselButtons {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
+
 .carousel {
     background:#1A237E;
 }
