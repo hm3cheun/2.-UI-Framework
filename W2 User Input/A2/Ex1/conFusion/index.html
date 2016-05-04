@@ -82,7 +82,6 @@
     <header class="jumbotron">
 
         <!-- Main component for a primary marketing message or call to action -->
-
         <div class="container">
             <div class="row row-header">
                 <div class="col-xs-12 col-sm-8">
@@ -104,8 +103,6 @@
     </header>
 
     <div class="container">
-
-
         <div class="row row-content">
             <div class="col-xs-12 col-sm-3 col-sm-push-9">
                 <p style="padding:20px;"></p>
@@ -129,7 +126,7 @@
               </div>
             </div>
         </div>
-</div>
+      </div>
 
 
         <div class="row row-content">
@@ -195,7 +192,7 @@
               <form class="form-horizontal" id="reserve">
                 <div class="form-group">
                   <label class="col-sm-2 control-label">Number of Guests</label>
-                      <div class="col-sm-5">
+
                         <label class="radio-inline">
                           <input type="radio" name="NumGuest" id="1" value="1"> 1
                         </label>
@@ -214,31 +211,35 @@
                         <label class="radio-inline">
                           <input type="radio" name="NumGuest" id="6" value="6"> 6
                         </label>
-                      </div>
                     </div>
 
                     <div class="form-group">
-                      <label class="col-sm-2 control-label">Number of Guests</label>
+                      <label class="col-sm-2 control-label">Time and Date</label>
                         <div class="row">
-                           <div class="col-sm-10 col-sm-3 col-sm-push-4">
-                              <div class="form-group has-success has-feedback">
-                                <input type="text" class="form-control" id="inputSuccess4" >
-                              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                          <div class="form-group form-inline">
+                            <div class = "col-sm-4">
+                                    <div class="form-group has-warning has-feedback">
+                                    <input type="text" class="form-control" id="inputWarning4" >
+                                    <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                              </div>
+                              <div class = "col-sm-4">
+                                    <div class="form-group has-warning has-feedback">
+                                    <input type="text" class="form-control" id="inputWarning4" >
+                                    <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                </div>
                             </div>
                           </div>
-                          <div class="col-sm-10 col-sm-3 col-sm-pull-3">
-                              <div class="form-group has-warning has-feedback">
-                              <input type="text" class="form-control" id="inputWarning4" >
-                              <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
-                              </div>
-                          </div>
-                        </div>
                       </div>
+
                       <div class="form-group">
-                       <div class="col-sm-offset-2 col-sm-12">
-                         <button type="submit" class="btn btn-primary">Sign in</button>
-                       </div>
-                     </div>
+                          <div class= "row">
+                            <div class = "col-sm-2"></div>
+                              <div class = "col-sm-4"><button type="submit" class="btn btn-primary">Reserve</button></div>
+                                <div class = "col-sm-4"></div>
+                         </div>
+                      </div>
                    </form>
                      <div class="alert alert-warning alert-dismissible" role="alert">
                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -248,7 +249,7 @@
 
             </div>
         </div>
-    </div>
+        </div>
 
     <footer>
         <div class="container row-footer">
