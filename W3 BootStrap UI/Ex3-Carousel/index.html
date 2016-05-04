@@ -61,22 +61,47 @@
                   <li><a href="contactus.html"><span class="fa fa-envelope-o"
                             aria-hidden="true"></span>  Contact</a></li>
                 </ul>
-                <form class="navbar-form navbar-right">
-                  <div class="form-group">
-                    <input type="text" class="form-control input-sm" placeholder="Email">
-                    <input type="email" class="form-control input-sm" placeholder="Password">
-                        <div class="checkbox">
-                            <label class="remember input-sm">
-                              <input class="form-control input-sm" type="checkbox"> Remember Me
-                            </label>
-                          </div>
-                        <button type="button" class="input-sm btn btn-info">Sign in</button>
-                    </div>
-                 </form>
+                <ul class="nav navbar-nav navbar-right">
+                   <li><a data-toggle="modal" data-target="#loginModal">
+                   <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                   </li>
+               </ul>
+
                 </div>
             </div>
           </div>
       </nav>
+
+      <div id="loginModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Login </h4>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                              <input type="email" class="form-control input-sm" placeholder="Email">
+                              <input type="password" class="form-control input-sm"" placeholder="Password">
+                              <div class="checkbox">
+                                  <label>
+                                    <input class="form-control" type="checkbox"> Remember Me
+                                  </label>
+                              </div>
+                                    <button type="button" class="input-sm btn-sm btn-info">Sign in</button>
+                                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                          </div>
+                      </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+      </div>
+
+
 
     <header class="jumbotron">
 
@@ -95,9 +120,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                   <p style="padding:40px;"></p>
-                  <a type="button" class="btn btn-warning btn-block"
-                  data-toggle="tooltip" title="Or Call us at +852 12345678"
-                  data-placement="bottom" href="#reserveform">Reserve Table</a>
+                  <a class="btn btn-lg btn-block btn-warning" href="#reserve" role="button">Reserve Table</a>
                </div>
 
             </div>
@@ -105,6 +128,8 @@
     </header>
 
     <div class="container">
+
+
         <div class="row row-content">
             <div class="col-xs-12 col-sm-3 col-sm-push-9">
                 <p style="padding:20px;"></p>
@@ -112,11 +137,12 @@
             </div>
             <div class="col-xs-12 col-sm-9 col-sm-pull-3">
               <div class="media">
-                <div class="media-left media-middle">
-                  <a href="#"><img class="media-object img-thumbnail"
-                    src="img/uthappizza.png" alt="Uthappizza">
-                  </a>
-                </div>
+          <div class="media-left media-middle">
+              <a href="#">
+              <img class="media-object img-thumbnail"
+               src="img/uthappizza.png" alt="Uthappizza">
+              </a>
+          </div>
               <div class="media-body">
                 <h2 class="media-heading">Uthappizza <span class="label label-danger">Hot</span> <span class="badge">$4.99</span></h2>
                 <p>A unique combination of Indian Uthappam (pancake) and
@@ -190,7 +216,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-9">
-              <form class="form-horizontal" id="reserveform">
+              <form class="form-horizontal" id="reserve">
                 <div class="form-group">
                   <label class="col-sm-2 control-label">Number of Guests</label>
                       <div class="col-sm-5">
@@ -213,7 +239,7 @@
                           <input type="radio" name="NumGuest" id="6" value="6"> 6
                         </label>
                       </div>
-                  </div>
+                    </div>
 
                     <div class="form-group">
                       <label class="col-sm-2 control-label">Number of Guests</label>
@@ -237,13 +263,12 @@
                          <button type="submit" class="btn btn-primary">Sign in</button>
                        </div>
                      </div>
-
                    </form>
                      <div class="alert alert-warning alert-dismissible" role="alert">
                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                        <strong>Warning::</strong> Please call us to reserve for more than six guest.
                      </div>
-                  </div>
+                    </div>
 
             </div>
         </div>
@@ -294,11 +319,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-       $(document).ready(function(){
-       $('[data-toggle="tooltip"]').tooltip();
-        });
-   </script>
 </body>
 
 </html>
