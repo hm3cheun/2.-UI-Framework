@@ -82,12 +82,13 @@
                   </div>
                   <div class="modal-body">
                     <form class="form-inline">
+
                         <div class="form-group">
                               <input type="email" class="form-control input-sm" placeholder="Email">
                               <input type="password" class="form-control input-sm" placeholder="Password">
                               <div class="checkbox">
                                   <label>
-                                    <input class="form-control" type="checkbox"> Remember Me
+                                    <input class="form-control input-sm" type="checkbox"> Remember Me
                                   </label>
                               </div>
                                     <button type="button" class="input-sm btn-sm btn-info">Sign in</button>
@@ -515,17 +516,50 @@
           $("#section_btn").attr("data-toggle","buttons");
 
 
+          document.getElementById("rm_close").addEventListener("click", hide_reserve_modal);
+          document.getElementById("rm2_close").addEventListener("click", hide_reserve_modal);
+          document.getElementById("rm_show").addEventListener("click", show_reserve_modal);
+          document.getElementById("lm_close2").addEventListener("click", hide_login_modal);
+          document.getElementById("lm_close").addEventListener("click", hide_login_modal);
+          document.getElementById("lm_show").addEventListener("click", show_login_modal);
+          document.getElementById("reserve_alert_close").addEventListener("click", hide_reserve_alert);
 
+          function hide_reserve_modal()
+          {
+              $("#reserveModal").modal('hide');
+          }
+
+          function show_reserve_modal()
+          {
+              $("#reserveModal").modal('show');
+          }
+
+          function show_login_modal()
+          {
+              $("#loginModal").modal('show');
+          }
+
+          function hide_login_modal()
+          {
+              $("#loginModal").modal('hide');
+          }
+
+          function hide_reserve_alert()
+          {
+              $("#reserver_alert").hide();
+          }
+
+
+
+          $("#reserve_alert_close").click(function(){
+
+          });
+
+          /*
           $("#rm_close").click(function(){
               $("#reserveModal").modal('hide');
-          });
-          $("#reserve_alert_close").click(function(){
-                $("#reserver_alert").hide();
-          });
-
-          $("#rm_show").click(function(){
-                  $("#reserveModal").modal('show');
-          });
+          });*/
+/*
 
           $("#lm_close").click(function(){
               $("#loginModal").modal('hide');
@@ -538,9 +572,11 @@
           $("#lm_show").click(function(){
               $("#loginModal").modal('show');
           });
+          */
+          /*
           $("#rm2_close").click(function(){
               $("#reserveModal").modal('hide');
-          });
+          });*/
 
       });
   </script>
